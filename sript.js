@@ -7,6 +7,7 @@ function GeneratePassword() {
   let lcasesym = "abcdefghijklmnopqrstuvwxyz";
   let ucasesym = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let ncasesym = "0123456789";
+  let scasesym = "!@#$%^&*()_-+=[{]};:<>|./?";
   let available = "";
   if (count.value == "") {
     return;
@@ -20,6 +21,9 @@ function GeneratePassword() {
   }
   if (ncase.checked) {
     available = available + ncasesym;
+  }
+  if (scase.checked) {
+    available = available + scasesym;
   }
   if (available.length == 0) return;
   let result = "";
