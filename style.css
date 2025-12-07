@@ -1,0 +1,95 @@
+* {
+  font-family: "Century Gothic";
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: min-content;
+  border: 5px solid black;
+  border-radius: 20px;
+  user-select: none;
+  padding: 15px;
+}
+
+.checks {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 5px 0 5px 0;
+}
+
+.checks input {
+  scale: 2;
+  margin: 0 15px 0 10px;
+}
+
+.checks label {
+  font-size: 30px;
+}
+
+.types {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 175px;
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.btn input {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  width: 85%;
+  border-radius: 10px;
+}
+
+.btn input::placeholder {
+  font-size: 20px;
+}
+
+.btn button {
+  width: 90%;
+  height: 30%;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.result p {
+  font-size: 30px;
+  margin: 20px 0 5px 0;
+}
+
+.result input {
+  font-size: 30px;
+  width: 95%;
+  border-width: 2px;
+  border-radius: 8px;
+  font-family: "Times New Roman";
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Password_Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="split">
+            <div class="types">
+                <div class="checks">
+                    <input type="checkbox" id="lcase">
+                    <label for="lcase">строчные</label>
+                </div>
+                <div class="checks">
+                    <input type="checkbox" id="ucase">
+                    <label for="ucase">заглавные</label>
+                </div>
+            </div>
+            <div class="btn">
+                <input type="text" id="count" placeholder="Кол-во символов">
+                <button onclick="GeneratePassword()">Сгенерировать</button>
+            </div>
+        </div>
+        <div class="result">
+            <p>Сгенерированный пароль</p>
+            <input type="text" id="resultText" readonly>
+        </div>
+    </div>
+</body>
+
+</html>
