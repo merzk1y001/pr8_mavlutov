@@ -1,10 +1,12 @@
 function GeneratePassword() {
   lcase = document.getElementById("lcase");
   ucase = document.getElementById("ucase");
+  ncase = document.getElementById("ncase");
   resultText = document.getElementById("resultText");
   count = document.getElementById("count");
   let lcasesym = "abcdefghijklmnopqrstuvwxyz";
   let ucasesym = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let ncasesym = "0123456789";
   let available = "";
   if (count.value == "") {
     return;
@@ -15,6 +17,9 @@ function GeneratePassword() {
   }
   if (ucase.checked) {
     available = available + ucasesym;
+  }
+  if (ncase.checked) {
+    available = available + ncasesym;
   }
   if (available.length == 0) return;
   let result = "";
